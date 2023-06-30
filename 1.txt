@@ -1,0 +1,136 @@
+ 1.
+    a. Modul yang digunakan:
+
+    readline: Digunakan untuk membaca data dari keyboard.
+    fs: Digunakan untuk melakukan operasi file, seperti menulis ke file.
+
+    b. Parameter yang digunakan:
+    Tidak terdapat parameter yang diterima sebagai argumen pada fungsi utama (main) dan fungsi-fungsi lainnya.
+
+    c. Cara kerja algoritma program sesuai dengan definisi masalah:
+    Program ini adalah sebuah program sederhana yang memungkinkan pengguna untuk memasukkan angka-angka, mengurutkannya menggunakan algoritma bubble sort, dan menyimpan hasil pengurutan ke dalam file "hasil_pengurutan.txt". Berikut adalah langkah-langkah algoritma program ini:
+
+        1.Program akan menampilkan menu pilihan kepada pengguna.
+        2.Pengguna dapat memilih menu dengan memasukkan angka sesuai dengan pilihan yang ditampilkan.
+        3.Jika pengguna memilih menu 1, program akan meminta pengguna memasukkan jumlah angka yang akan diinput, kemudian akan meminta pengguna memasukkan angka-angka tersebut satu per satu. Angka-angka ini akan disimpan dalam array "angkaArr".
+        4.Jika pengguna memilih menu 2, program akan memeriksa apakah sudah ada data angka yang diinput (array "angkaArr" tidak kosong). Jika sudah ada data, program akan menampilkan data sebelum diurutkan, melakukan pengurutan menggunakan algoritma bubble sort, menampilkan data setelah diurutkan, dan menyimpan hasil pengurutan ke dalam file "hasil_pengurutan.txt".
+        5.Jika pengguna memilih menu 3, program akan berhenti dan menampilkan pesan "Program selesai".
+        6.Jika pengguna memilih menu selain 1, 2, atau 3, program akan menampilkan pesan "Pilihan menu tidak valid".
+
+    d. cek file 1.js
+
+2.
+
+    a. Dokumentasi modul:
+
+        * Program Pengurutan Angka
+        * Modul untuk membaca data dari keyboard dan melakukan pengurutan angka menggunakan algoritma bubble sort.
+        * 
+        * Modul ini menggunakan modul readline dan fs dari Node.js.
+        * 
+        * Modul ini memiliki fungsi readInput() untuk membaca data dari keyboard.
+        * 
+        * Modul ini juga memiliki fungsi main() sebagai program utama yang menampilkan menu pilihan dan melakukan pengurutan angka.
+        * 
+        * Setelah pengurutan, hasil pengurutan akan disimpan ke dalam file hasil_pengurutan.txt.
+        * 
+        * Fungsi bubbleSort() digunakan untuk melakukan pengurutan angka menggunakan algoritma bubble sort.
+        * 
+        * Fungsi swap() digunakan untuk menukar data pada indeks ke-i dan ke-j dalam array.
+        */
+
+        /**
+        * Fungsi untuk membaca data dari keyboard menggunakan readline interface.
+        * @param {string} question - Pertanyaan yang ditampilkan untuk meminta input dari pengguna.
+        * @returns {Promise<string>} - Promise yang akan mengembalikan jawaban dari pengguna.
+        */
+        function readInput(question) {
+        // ...
+        }
+
+        /**
+        * Fungsi utama yang menampilkan menu pilihan dan melakukan pengurutan angka.
+        * Setelah pengurutan, hasil pengurutan akan disimpan ke dalam file hasil_pengurutan.txt.
+        */
+        async function main() {
+        // ...
+        }
+
+        /**
+        * Prosedur pengurutan data dengan algoritma bubble sort.
+        * @param {Array<number>} arr - Array angka yang akan diurutkan.
+        */
+        function bubbleSort(arr) {
+        // ...
+        }
+
+        /**
+        * Fungsi untuk menukar data pada indeks ke-i dan ke-j dalam array.
+        * @param {Array<number>} arr - Array angka.
+        * @param {number} i - Indeks ke-i.
+        * @param {number} j - Indeks ke-j.
+        */
+        function swap(arr, i, j) {
+        // ...
+        }
+
+        // Jalankan program utama
+        main();
+
+    b. Identifikasi dokumentasi:
+
+        Modul: Program Pengurutan Angka
+        Fungsi:
+            readInput(question)
+            main()
+            bubbleSort(arr)
+            swap(arr, i, j)
+        Jalankan program utama: main()
+
+    c. Kegunaan modul:
+    Modul ini digunakan untuk membaca data angka dari pengguna, melakukan pengurutan angka menggunakan algoritma bubble sort, dan menyimpan hasil pengurutan ke dalam file "hasil_pengurutan.txt". Modul ini memudahkan pengguna untuk memasukkan data angka, melihat hasil pengurutan, dan menyimpannya dengan mudah.
+
+    d. Revisi dokumen:
+    Dokumen telah diperbarui untuk mencakup informasi yang diperlukan dan memenuhi syarat teknis.
+
+3. 
+    a. Fungsi readInput(question)
+        Deskripsi: Fungsi ini digunakan untuk membaca data dari keyboard menggunakan readline interface.
+        Parameter:
+            question (string): Pertanyaan yang ditampilkan untuk meminta input dari pengguna.
+        Return: Promise yang akan mengembalikan jawaban dari pengguna.
+
+        Fungsi main()
+        Deskripsi: Fungsi utama yang menampilkan menu pilihan dan melakukan pengurutan angka.
+        Tidak menerima parameter.
+        Return: Tidak ada.
+
+        Prosedur bubbleSort(arr)
+        Deskripsi: Prosedur pengurutan data dengan algoritma bubble sort.
+        Parameter:
+            arr (Array<number>): Array angka yang akan diurutkan.
+        Return: Tidak ada.
+
+        Fungsi swap(arr, i, j)
+        Deskripsi: Fungsi untuk menukar data pada indeks ke-i dan ke-j dalam array.
+        Parameter:
+            arr (Array<number>): Array angka.
+            i (number): Indeks ke-i.
+            j (number): Indeks ke-j.
+        Return: Tidak ada.
+
+    b.Kemungkinan eksepsi pada modul program:
+    Pada saat membaca data dari keyboard menggunakan fungsi readInput, jika terjadi kesalahan pada readline interface, dapat muncul exception.
+
+    c. sama seperti nomor 2 point a tentang dokumentasi modul
+
+4. 
+    a. Tools untuk generate dokumentasi yang populer adalah JSDoc, YUIDoc, dan documentation.js. JSDoc adalah salah satu yang paling umum digunakan dan kompatibel dengan banyak proyek JavaScript. Untuk menggunakan JSDoc, Anda dapat menginstalnya melalui npm dengan perintah npm install -g jsdoc. Setelah terpasang, Anda dapat menjalankan perintah jsdoc <nama_file.js> untuk menghasilkan dokumentasi.
+
+    b. Jika hasil dokumentasi tidak berhasil digenerate, berikut beberapa solusi yang dapat dicoba:
+
+       1. Pastikan bahwa kode program Anda memiliki format yang benar dan tidak ada kesalahan sintaks.
+       2. Periksa apakah ada kesalahan atau warning yang ditampilkan saat menjalankan perintah generasi dokumentasi. Jika ada, perbaiki kesalahan atau masalah yang muncul.
+       3. Periksa apakah ada konfigurasi khusus yang diperlukan oleh alat generasi dokumentasi yang Anda gunakan. Pastikan konfigurasi tersebut disesuaikan dengan kode program Anda.
+       4. Periksa apakah modul atau dependensi yang dibutuhkan oleh alat generasi dokumentasi telah terpasang dengan benar.
+       5. Pastikan bahwa kode program Anda telah dijelaskan dengan komentar yang sesuai menggunakan sintaks yang diharapkan oleh alat generasi dokumentasi.
