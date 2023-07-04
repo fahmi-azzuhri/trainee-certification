@@ -1,0 +1,249 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root[data-bs-theme="light"] {
+  --primary: rgba(113, 38, 181, 1);
+  --secondary: rgba(138, 138, 138, 1);
+}
+
+body {
+  margin: 0;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.text-primary-default {
+  color: var(--primary);
+}
+.btn-primary-default {
+  background-color: var(--primary);
+}
+.bg-login-register {
+  background: linear-gradient(
+    180deg,
+    #dec9ff 59.55%,
+    rgba(255, 233, 202, 0) 100%
+  );
+}
+/*Navbar*/
+.icon-nav {
+  width: 1.5rem;
+  height: auto;
+  color: var(--primary);
+}
+.jumbotron {
+  height: 50px;
+}
+.bg-custom-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.bg-jumbotron {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://img.freepik.com/free-vector/airport-runway-concept-illustration_114360-9564.jpg?w=740&t=st=1686240895~exp=1686241495~hmac=0182044ea1efef549f92c94739aca8b8692cbc476b794dd157da2f1439d80a68);
+}
+
+/*Detail Penerbangan*/
+
+.btn-green-default {
+  background-color: var(--green);
+}
+.img-fluid.logo {
+  width: 7rem;
+}
+.icon-flightSearch {
+  width: 1.5rem;
+  height: auto;
+  color: var(--secondary);
+}
+.icon-change {
+  width: 2.5rem;
+  height: auto;
+  color: var(--primary);
+}
+.icon-change:hover {
+  color: var(--secondary);
+}
+.form-width {
+  width: 32rem;
+}
+.form-size {
+  width: 248px;
+}
+.form-height {
+  height: 39px;
+  width: 15rem;
+}
+.dropdown-width {
+  width: 200px;
+  padding-right: 10px;
+}
+.destination-image {
+  width: 100%;
+  height: 40vh;
+}
+p {
+  margin: 0;
+}
+
+.text-primary {
+  color: #7126b5 !important;
+}
+
+.btn-primary {
+  background: #7126b5;
+}
+
+.btn-secondary {
+  background: #d0b7e6;
+}
+
+.payment-method-parent-collapse {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  padding: 13px 16px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.payment-method-parent-collapse .icon {
+  cursor: pointer;
+}
+.payment-method-parent-collapse .icon :active {
+  transform: rotate(90deg);
+}
+
+.judul-form-checkout {
+  background: #3c3c3c;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px 8px 0 0;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+}
+
+.navbar-serach {
+  position: relative;
+  width: 444px;
+}
+.navbar-serach input {
+  border-radius: 20px;
+  background-color: #eeeeee;
+  height: 48px;
+  padding: 0 24px;
+}
+.navbar-serach .icon-search {
+  position: absolute;
+  height: 48px;
+  top: 0;
+  right: 12px;
+}
+
+.navbar-nav {
+  gap: 20px;
+}
+
+.breadcrumb {
+  padding: 32px 0;
+  font-weight: bold;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #8a8a8a !important;
+  text-decoration: none;
+}
+.breadcrumb .breadcrumb-item.active {
+  color: #000000;
+}
+
+.input-underline {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-payment-method {
+  margin: 0 48px;
+} /*# sourceMappingURL=index.css.map */
+
+.loginAlert {
+  background-color: rgb(255, 56, 56);
+  color: rgb(255, 56, 56);
+}
+
+/* payment */
+.notif_danger {
+  background-color: #ff0000;
+  color: white;
+  border-radius: 12px;
+  height: 50px;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+}
+
+.form_payment {
+  background-color: #3c3c3c;
+  color: white;
+  height: 50px;
+}
+
+.btn_switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3c3c;
+  color: white;
+  height: 50px;
+}
+
+.btn_switch.on {
+  background-color: #7126b5;
+}
+
+.btn_switch.off {
+  background-color: #3c3c3c;
+}
+
+/* payment-success */
+.terbitkanTiket {
+  background-color: #7126b5;
+  color: white;
+  height: 48px;
+}
+
+.cariPenerbanganLain {
+  background-color: #d0b7e6;
+  color: white;
+  height: 48px;
+}
+
+.notif_sukses {
+  background-color: #73ca5c;
+  color: white;
+  height: 50px;
+  border-radius: 12px;
+}
+.landing-page {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f7f7f7, #e8e8e8);
+}
+
+.landing-page h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.landing-page p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.landing-page button {
+  font-size: 18px;
+  padding: 12px 30px;
+}

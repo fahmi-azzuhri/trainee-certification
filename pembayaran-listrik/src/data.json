@@ -1,0 +1,88 @@
+{
+  "tbUser": [
+    {
+      "id": 1,
+      "username": "john123",
+      "email": "email@email.com"
+    },
+    {
+      "id": 2,
+      "username": "jane456",
+      "email": "email456"
+    },
+    {
+      "id": 3,
+      "username": "bob789",
+      "email": "email789"
+    }
+  ],
+  "tbTarifListrik": [
+    {
+      "id": 1,
+      "tbUser_id": 1,
+      "kdtarif": "A",
+      "beban": 2200,
+      "tarif_perkwh": 1500
+    },
+    {
+      "id": 2,
+      "tbUser_id": 2,
+      "kdtarif": "B",
+      "beban": 3500,
+      "tarif_perkwh": 1800
+    },
+    {
+      "id": 3,
+      "tbUser_id": 3,
+      "kdtarif": "C",
+      "beban": 5000,
+      "tarif_perkwh": 2000
+    }
+  ],
+  "tbPelanggan": [
+    {
+      "id": 1,
+      "tbTarifListrik_id": 1,
+      "pelanggan_id": "PLG001",
+      "nama_pelanggan": "John Doe",
+      "alamat": "123 Main St"
+    },
+    {
+      "id": 2,
+      "tbTarifListrik_id": 2,
+      "pelanggan_id": "PLG002",
+      "nama_pelanggan": "Jane Smith",
+      "alamat": "456 Elm St"
+    },
+    {
+      "id": 3,
+      "tbTarifListrik_id": 3,
+      "pelanggan_id": "PLG003",
+      "nama_pelanggan": "Bob Johnson",
+      "alamat": "789 Oak St"
+    }
+  ],
+  "tbTagihan": [
+    {
+      "id": 1,
+      "tbPelanggan_id": 1,
+      "tahun_tagihan": "2023",
+      "bulan_tagihan": "07",
+      "pemakaian": 500
+    },
+    {
+      "id": 2,
+      "tbPelanggan_id": 2,
+      "tahun_tagihan": "2023",
+      "bulan_tagihan": "07",
+      "pemakaian": 800
+    },
+    {
+      "id": 3,
+      "tbPelanggan_id": 3,
+      "tahun_tagihan": "2023",
+      "bulan_tagihan": "07",
+      "pemakaian": 1000
+    }
+  ]
+}
