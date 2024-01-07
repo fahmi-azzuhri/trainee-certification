@@ -105,13 +105,15 @@ const Pelanggan = () => {
                     <Button
                       variant="primary"
                       size="sm"
-                      onClick={() => handleEditCustomer(customer)}>
+                      onClick={() => handleEditCustomer(customer)}
+                    >
                       Edit
                     </Button>{" "}
                     <Button
                       variant="danger"
                       size="sm"
-                      onClick={() => handleDeleteCustomer(customer)}>
+                      onClick={() => handleDeleteCustomer(customer)}
+                    >
                       Hapus
                     </Button>
                   </td>
@@ -156,11 +158,12 @@ const Pelanggan = () => {
                     as="select"
                     name="tbTarifListrik_id"
                     value={formValues.tbTarifListrik_id}
-                    onChange={handleInputChange}>
+                    onChange={handleInputChange}
+                  >
                     <option value="">Pilih Tarif</option>
                     {tariffs.map((tariff) => (
                       <option key={tariff.id} value={tariff.id}>
-                        {tariff.type} - Rp {tariff.price}
+                        {tariff.type} - Rp {tariff.tarif_perkwh}
                       </option>
                     ))}
                   </Form.Control>
