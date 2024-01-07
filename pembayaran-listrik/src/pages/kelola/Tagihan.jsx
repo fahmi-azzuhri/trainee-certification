@@ -111,13 +111,15 @@ const Tagihan = () => {
                     <Button
                       variant="primary"
                       size="sm"
-                      onClick={() => handleEditBill(bill)}>
+                      onClick={() => handleEditBill(bill)}
+                    >
                       Edit
                     </Button>{" "}
                     <Button
                       variant="danger"
                       size="sm"
-                      onClick={() => handleDeleteBill(bill)}>
+                      onClick={() => handleDeleteBill(bill)}
+                    >
                       Hapus
                     </Button>
                   </td>
@@ -140,11 +142,12 @@ const Tagihan = () => {
                     as="select"
                     name="customerId"
                     value={formValues.customerId}
-                    onChange={handleInputChange}>
+                    onChange={handleInputChange}
+                  >
                     <option value="">Pilih Pelanggan</option>
                     {customers.map((customer) => (
                       <option key={customer.id} value={customer.id}>
-                        {customer.name}
+                        {customer.nama_pelanggan}
                       </option>
                     ))}
                   </Form.Control>
