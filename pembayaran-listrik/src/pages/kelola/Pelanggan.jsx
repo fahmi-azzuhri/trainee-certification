@@ -70,7 +70,7 @@ const Pelanggan = () => {
 
   const getTariffType = (tariffId) => {
     const tariff = tariffs.find((tariff) => tariff.id === tariffId);
-    return tariff ? tariff.type : "";
+    return tariff ? tariff.tarif_perkwh : "";
   };
 
   return (
